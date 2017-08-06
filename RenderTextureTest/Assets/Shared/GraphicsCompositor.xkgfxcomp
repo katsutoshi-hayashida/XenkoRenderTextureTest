@@ -186,14 +186,56 @@ SharedRenderers:
     ee80a20a9bd99f2d70711114e15fe7ca: !SiliconStudio.Xenko.Rendering.Compositing.DebugRenderer,SiliconStudio.Xenko.Engine
         Id: 26244fb0-a0a8-4d7a-97ad-491003f5caa6
         DebugRenderStages: {}
-Game: !SiliconStudio.Xenko.Rendering.Compositing.SceneCameraRenderer,SiliconStudio.Xenko.Engine
-    Id: 76fe87cf-f574-4ad6-85b8-e9a9586be0e2
-    Camera*: ref!! cb71d83d-8b4e-4133-8bd2-9b75e4fc6e6c
-    Child: !SiliconStudio.Xenko.Rendering.Compositing.SceneRendererCollection,SiliconStudio.Xenko.Engine
-        Id: 82568e46-92e7-421a-8dca-114a74e0cd69
-        Children:
-            d39c5ddbf8b7d5ca02bafb6496b1cc3c: !SiliconStudio.Xenko.Rendering.Compositing.ForwardRenderer,SiliconStudio.Xenko.Engine ref!! 20db3bc0-6533-4855-9bb6-8fa23a50c384
-            01d338078e9b21121ead0868932613dd: !SiliconStudio.Xenko.Rendering.Compositing.DebugRenderer,SiliconStudio.Xenko.Engine ref!! 26244fb0-a0a8-4d7a-97ad-491003f5caa6
+    5963f0615083f17ea001d95e8835dad4*: !SiliconStudio.Xenko.Rendering.Compositing.ForwardRenderer,SiliconStudio.Xenko.Engine
+        Id: 96ec173e-aa20-4d6b-b75a-74909abbdfba
+        Clear:
+            Id: 862b91ee-b22a-49c7-b4e9-1c66d120c703
+            Color: {R: 0.392156869, G: 0.58431375, B: 0.929411769, A: 1.0}
+        LightProbes: true
+        OpaqueRenderStage: ref!! 0d253518-1f59-4747-be98-3a4be59aa50b
+        TransparentRenderStage: ref!! 991c63df-32a0-4b45-8db6-e03029002a61
+        ShadowMapRenderStages: {}
+        GBufferRenderStage: ref!! 88b79d26-b089-49cb-af91-3d3c1b1db050
+        PostEffects: null
+        LightShafts: null
+        VRSettings:
+            Enabled: false
+            RequiredApis: {}
+            Overlays: {}
+        MSAALevel: None
+        MSAAResolver: {}
+    38d4652fd99408fdd6895ce945cf8ce3*: !SiliconStudio.Xenko.Rendering.Compositing.ForwardRenderer,SiliconStudio.Xenko.Engine
+        Id: 6bef74ae-f929-4a0d-a746-23b531e5375b
+        Clear:
+            Id: dbe2df7f-ebcf-446d-959d-dc4ac45d5739
+            Color: {R: 0.392156869, G: 0.58431375, B: 0.929411769, A: 1.0}
+        LightProbes: true
+        OpaqueRenderStage: ref!! 0d253518-1f59-4747-be98-3a4be59aa50b
+        TransparentRenderStage: ref!! 991c63df-32a0-4b45-8db6-e03029002a61
+        ShadowMapRenderStages: {}
+        GBufferRenderStage: ref!! 88b79d26-b089-49cb-af91-3d3c1b1db050
+        PostEffects: null
+        LightShafts: null
+        VRSettings:
+            Enabled: false
+            RequiredApis: {}
+            Overlays: {}
+        MSAALevel: None
+        MSAAResolver: {}
+Game*: !SiliconStudio.Xenko.Rendering.Compositing.SceneRendererCollection,SiliconStudio.Xenko.Engine
+    Id: 34483395-ced3-47f6-bd55-6e2ce4bc2511
+    Children:
+        71964ee29c7623dfe8c2aaf1fe99d4de: !SiliconStudio.Xenko.Rendering.Compositing.SceneCameraRenderer,SiliconStudio.Xenko.Engine
+            Id: 2c79fbfa-877d-435e-9bbf-134c0d7f53ae
+            Camera: ref!! cb71d83d-8b4e-4133-8bd2-9b75e4fc6e6c
+            Child: !SiliconStudio.Xenko.Rendering.Compositing.RenderTextureSceneRenderer,SiliconStudio.Xenko.Engine
+                Id: e5e31ff7-a2d2-4661-ac05-2a166f4fde48
+                RenderTexture: e0b12686-e22a-4c47-a85c-d96e07b3e6f7:LV1 RenderTexture
+                Child: !SiliconStudio.Xenko.Rendering.Compositing.ForwardRenderer,SiliconStudio.Xenko.Engine ref!! 96ec173e-aa20-4d6b-b75a-74909abbdfba
+        2246ecea64e9675552dffd322edec017: !SiliconStudio.Xenko.Rendering.Compositing.SceneCameraRenderer,SiliconStudio.Xenko.Engine
+            Id: 0e061efc-cab2-469b-8967-346d41a698cb
+            Camera: ref!! 92f401b3-fd3f-4a9b-8477-9cd6cea6aec5
+            Child: !SiliconStudio.Xenko.Rendering.Compositing.ForwardRenderer,SiliconStudio.Xenko.Engine ref!! 6bef74ae-f929-4a0d-a746-23b531e5375b
 SingleView: !SiliconStudio.Xenko.Rendering.Compositing.ForwardRenderer,SiliconStudio.Xenko.Engine ref!! e2d49fab-256d-4d9a-b5bb-4a649d73e227
 Editor: !SiliconStudio.Xenko.Rendering.Compositing.ForwardRenderer,SiliconStudio.Xenko.Engine ref!! 20db3bc0-6533-4855-9bb6-8fa23a50c384
 BlockPositions: {}
