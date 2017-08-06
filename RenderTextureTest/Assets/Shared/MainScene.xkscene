@@ -12,6 +12,8 @@ Hierarchy:
         - 84fedc8c-6884-4149-bc01-7e7a303b3dc7
         - 3adef645-93f6-4a34-bb2e-6805defbe559
         - 21304806-9918-48f6-8521-02504b63051d
+        - 2744e697-63e4-4425-8c34-551b90b31b67
+        - 531d1015-a04b-4b39-b831-c975ba325802
     Parts:
         -   Entity:
                 Id: 21304806-9918-48f6-8521-02504b63051d
@@ -30,6 +32,23 @@ Hierarchy:
                             Texture: e0b12686-e22a-4c47-a85c-d96e07b3e6f7:LV1 RenderTexture
                             Center: {X: 0.0, Y: 0.0}
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
+                Id: 2744e697-63e4-4425-8c34-551b90b31b67
+                Name: LV1 Camera
+                Components:
+                    af84790d9698c3c656e182137b771284: !TransformComponent
+                        Id: 20e25c79-a652-4f0f-97d7-5774667c0fae
+                        Position: {X: 100.0, Y: 0.0, Z: 500.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8f40c81fcf083181c47b4e1ffd6b0c03: !CameraComponent
+                        Id: e81c372e-3cfb-40d7-95e8-75b6cbec517d
+                        Name: null
+                        Projection: Orthographic
+                        OrthographicSize: 7.2
+                        UseCustomAspectRatio: true
+                        Slot: 00000000-0000-0000-0000-000000000000
         -   Entity:
                 Id: 3adef645-93f6-4a34-bb2e-6805defbe559
                 Name: Sphere
@@ -56,6 +75,21 @@ Hierarchy:
                         Children: {}
                     e3be443a9d88aeb21ebbe361fca89204: !SpriteComponent
                         Id: 87348722-f114-4f1b-9224-adf6e585aa64
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 1fbb54e8-14bb-4364-8964-d0ec71cd296e:SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
+                Id: 531d1015-a04b-4b39-b831-c975ba325802
+                Name: LV1 BG
+                Components:
+                    ece2254e9d2908d887f1a5c5296b8bdd: !TransformComponent
+                        Id: d61087b1-253c-47ec-af1f-f4b1bbe8976a
+                        Position: {X: 100.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3759cd41b02e0475b2e4c08b75ff275d: !SpriteComponent
+                        Id: c16623e8-1b63-40d9-84a2-dc6c80531b1b
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 1fbb54e8-14bb-4364-8964-d0ec71cd296e:SpriteSheet
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
