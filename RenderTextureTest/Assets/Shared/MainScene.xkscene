@@ -71,6 +71,7 @@ Hierarchy:
                         Projection: Orthographic
                         OrthographicSize: 7.2
                         UseCustomAspectRatio: true
+                        AspectRatio: 1.777778
                         Slot: cb71d83d-8b4e-4133-8bd2-9b75e4fc6e6c
         -   Folder: LV2
             Entity:
@@ -88,6 +89,7 @@ Hierarchy:
                         Name: null
                         Projection: Perspective
                         UseCustomAspectRatio: true
+                        AspectRatio: 1.777778
                         Slot: 8b96db95-a174-4a17-bb38-c23b208b59fd
         -   Folder: LV2
             Entity:
