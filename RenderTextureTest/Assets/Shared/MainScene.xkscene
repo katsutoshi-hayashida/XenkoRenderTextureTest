@@ -11,8 +11,25 @@ Hierarchy:
         - b822301c-8e9d-4ea5-9321-df02e0b9b4a5
         - 84fedc8c-6884-4149-bc01-7e7a303b3dc7
         - 3adef645-93f6-4a34-bb2e-6805defbe559
-        - 4e8fea61-6bd8-49dd-bed4-261bd88c6f1f
+        - 21304806-9918-48f6-8521-02504b63051d
     Parts:
+        -   Entity:
+                Id: 21304806-9918-48f6-8521-02504b63051d
+                Name: LV1 RenderTexture Instance
+                Components:
+                    7d6beabfa35dc2ac91a50ef9509563ff: !TransformComponent
+                        Id: 209887f3-16a0-405e-b307-96f4345622eb
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            b4364c5ab24707c86a630a0947f12a69: ref!! 4470418a-20b1-4bc0-a862-488645ee25fe
+                    a27ecb53091b6b9a26ad706969e3b303: !SpriteComponent
+                        Id: 89bbba8b-9cdf-47b8-83fa-6ddbfbe27741
+                        SpriteProvider: !SpriteFromTexture
+                            Texture: e0b12686-e22a-4c47-a85c-d96e07b3e6f7:LV1 RenderTexture
+                            Center: {X: 0.0, Y: 0.0}
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
         -   Entity:
                 Id: 3adef645-93f6-4a34-bb2e-6805defbe559
                 Name: Sphere
