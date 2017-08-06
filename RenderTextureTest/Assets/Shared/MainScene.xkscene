@@ -11,6 +11,7 @@ Hierarchy:
         - b822301c-8e9d-4ea5-9321-df02e0b9b4a5
         - 84fedc8c-6884-4149-bc01-7e7a303b3dc7
         - 3adef645-93f6-4a34-bb2e-6805defbe559
+        - 4e8fea61-6bd8-49dd-bed4-261bd88c6f1f
     Parts:
         -   Entity:
                 Id: 3adef645-93f6-4a34-bb2e-6805defbe559
@@ -27,19 +28,35 @@ Hierarchy:
                         Model: dea1d62a-de6e-498b-bef5-92679246361c:Sphere
                         Materials: {}
         -   Entity:
+                Id: 4e8fea61-6bd8-49dd-bed4-261bd88c6f1f
+                Name: LV1 Position Helper
+                Components:
+                    0b16b69cc45a5a99456b481c6925a031: !TransformComponent
+                        Id: 4470418a-20b1-4bc0-a862-488645ee25fe
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e3be443a9d88aeb21ebbe361fca89204: !SpriteComponent
+                        Id: 87348722-f114-4f1b-9224-adf6e585aa64
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 1fbb54e8-14bb-4364-8964-d0ec71cd296e:SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
                 Id: 7023f7c2-7cea-4818-9cd3-e072e076c5db
                 Name: Camera
                 Components:
                     11535a1bc88b24f8438967ec456e26e6: !TransformComponent
                         Id: 94c49f48-de4d-481f-aea0-3db9f8cec319
-                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
-                        Rotation: {X: 0.0, Y: 0.829037547, Z: 0.0, W: 0.5591929}
+                        Position: {X: 0.0, Y: 0.0, Z: 500.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     48badf03cb11fc0514fc0c0493eeaf01: !CameraComponent
                         Id: b00e542c-2b3b-4e98-873d-183f4336903d
                         Name: null
-                        Projection: Perspective
+                        Projection: Orthographic
+                        OrthographicSize: 7.2
                         Slot: 92f401b3-fd3f-4a9b-8477-9cd6cea6aec5
                     30876166cd57764eb98f9cbaef8180d8: !RenderTextureTest.BasicCameraController,RenderTextureTest.Game
                         Id: e54c9a07-6454-4ebd-b248-77ebf4072153

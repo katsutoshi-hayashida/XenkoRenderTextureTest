@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 1fbb54e8-14bb-4364-8964-d0ec71cd296e
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    7aa3d1e6ff94e937e362862b0575c77a:
+        Source: graph-paper-white-brown-grid-1280x720-c2-fffff0-bc8f8f-l2-6-72-a-0-f-20.jpg
+        Name: graph-paper-white-brown-grid-1280x720-c2-fffff0-bc8f8f-l2-6-72-a-0-f-20
+        TextureRegion: {X: 0, Y: 0, Width: 1280, Height: 720}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
