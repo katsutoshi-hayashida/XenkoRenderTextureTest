@@ -44,7 +44,7 @@ Hierarchy:
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
         -   Entity:
                 Id: 7023f7c2-7cea-4818-9cd3-e072e076c5db
-                Name: Camera
+                Name: MainCamera
                 Components:
                     11535a1bc88b24f8438967ec456e26e6: !TransformComponent
                         Id: 94c49f48-de4d-481f-aea0-3db9f8cec319
