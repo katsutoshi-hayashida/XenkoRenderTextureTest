@@ -48,7 +48,7 @@ Hierarchy:
                         Projection: Orthographic
                         OrthographicSize: 7.2
                         UseCustomAspectRatio: true
-                        Slot: 00000000-0000-0000-0000-000000000000
+                        Slot: cb71d83d-8b4e-4133-8bd2-9b75e4fc6e6c
         -   Entity:
                 Id: 3adef645-93f6-4a34-bb2e-6805defbe559
                 Name: Sphere

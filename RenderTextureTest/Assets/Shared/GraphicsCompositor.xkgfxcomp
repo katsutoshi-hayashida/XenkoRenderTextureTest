@@ -6,7 +6,10 @@ Archetype: 823a81bf-bac0-4552-9267-aeed499c40df:DefaultGraphicsCompositorLevel10
 Cameras:
     de2e75c3b2b23e54162686363f3f138e:
         Id: 92f401b3-fd3f-4a9b-8477-9cd6cea6aec5
-        Name*: MainCameraSlot
+        Name*: Main Camera Slot
+    29be39045fdc45948b45bbafa0639ffb*:
+        Id: cb71d83d-8b4e-4133-8bd2-9b75e4fc6e6c
+        Name: LV1 Camera Slot
 RenderStages:
     47116750c1a5d449b4ad3625f71439b3:
         Id: 0d253518-1f59-4747-be98-3a4be59aa50b
@@ -185,7 +188,7 @@ SharedRenderers:
         DebugRenderStages: {}
 Game: !SiliconStudio.Xenko.Rendering.Compositing.SceneCameraRenderer,SiliconStudio.Xenko.Engine
     Id: 76fe87cf-f574-4ad6-85b8-e9a9586be0e2
-    Camera: ref!! 92f401b3-fd3f-4a9b-8477-9cd6cea6aec5
+    Camera*: ref!! cb71d83d-8b4e-4133-8bd2-9b75e4fc6e6c
     Child: !SiliconStudio.Xenko.Rendering.Compositing.SceneRendererCollection,SiliconStudio.Xenko.Engine
         Id: 82568e46-92e7-421a-8dca-114a74e0cd69
         Children:
