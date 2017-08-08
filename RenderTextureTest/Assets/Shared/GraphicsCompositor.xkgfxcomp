@@ -125,7 +125,7 @@ SharedRenderers:
         Clear:
             Id: 4bc4b2ca-027e-4e4a-94cb-2912709bef5f
             ClearFlags*: ColorAndDepth
-            Color*: {R: 0.0, G: 0.0, B: 0.0, A: 0.0}
+            Color*: {R: 0.392156869, G: 0.58431375, B: 0.929411769, A: 1.0}
         LightProbes: true
         OpaqueRenderStage: ref!! 0d253518-1f59-4747-be98-3a4be59aa50b
         TransparentRenderStage: ref!! 991c63df-32a0-4b45-8db6-e03029002a61

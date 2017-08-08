@@ -12,7 +12,6 @@ Hierarchy:
         - 2744e697-63e4-4425-8c34-551b90b31b67
         - 531d1015-a04b-4b39-b831-c975ba325802
         - 38a19253-f63a-40bd-b3a1-c0b936522db9
-        - 84fedc8c-6884-4149-bc01-7e7a303b3dc7
         - 3adef645-93f6-4a34-bb2e-6805defbe559
     Parts:
         -   Folder: LV1
@@ -41,7 +40,7 @@ Hierarchy:
                 Components:
                     00c5017c8ca9ca0eed435e8d4589f9d3: !TransformComponent
                         Id: 3f517713-3571-402a-b879-619d853edfd1
-                        Position: {X: 200.0, Y: 4.84406757, Z: 20.0}
+                        Position: {X: 200.0, Y: 2.17453146, Z: 6.67518139}
                         Rotation: {X: -0.132885277, Y: 0.0, Z: 0.0, W: 0.9911314}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -132,21 +131,6 @@ Hierarchy:
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 BiasParameters: {}
                         Intensity: 20.0
-        -   Folder: LV2
-            Entity:
-                Id: 84fedc8c-6884-4149-bc01-7e7a303b3dc7
-                Name: Ground
-                Components:
-                    14c2142ca425002fe499a68d3478d01c: !TransformComponent
-                        Id: d300b617-6efc-4e2c-95e5-d7eda337ed90
-                        Position: {X: 200.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    eecc245eeb06e6ff104e501aa4d0980b: !ModelComponent
-                        Id: 4112ff06-0715-4a2d-9fe0-7a5c01f6e20f
-                        Model: 7a48fe96-7619-41ae-899d-e75b3bc13ce2:Ground
-                        Materials: {}
         -   Entity:
                 Id: b822301c-8e9d-4ea5-9321-df02e0b9b4a5
                 Name: Skybox
