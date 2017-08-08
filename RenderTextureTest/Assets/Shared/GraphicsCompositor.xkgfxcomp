@@ -177,8 +177,10 @@ SharedRenderers:
             Attenuation: 0.7
         LensFlare: {}
         ColorTransforms:
+            Enabled*: false
             Transforms:
                 1e06f805f8b2e949a06c30d45fe413ef: !ToneMap
+                    Enabled*: false
                     Operator: !ToneMapHejl2Operator {}
                 c57351444609d14ea258b3f511ec8a74: !FilmGrain
                     Enabled: false
@@ -218,7 +220,7 @@ SharedRenderers:
         TransparentRenderStage: ref!! 991c63df-32a0-4b45-8db6-e03029002a61
         ShadowMapRenderStages: {}
         GBufferRenderStage: ref!! 88b79d26-b089-49cb-af91-3d3c1b1db050
-        PostEffects: null
+        PostEffects: !PostProcessingEffects ref!! 53a5edd1-4be0-4fa4-bfeb-141efdd323cb
         LightShafts: null
         VRSettings:
             Enabled: false
